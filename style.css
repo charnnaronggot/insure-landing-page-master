@@ -1,0 +1,430 @@
+@import url(https://fonts.google.com/specimen/DM+Serif+Display);
+
+*{
+    margin: 0;
+    padding :0 ; 
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: 'DM Serif Display' ;
+}
+
+.main {
+    height: 100vh;
+
+
+}
+
+
+.color-content {
+    background-color: hsl(256, 26%, 20%);
+    height: 600px;
+}
+
+.header li {
+    list-style: none;
+}
+
+.header {
+    background: white;
+}
+.container {
+    width: 83%;
+    display: flex;
+    justify-content: center;
+    margin:  0 auto;
+}
+
+.content-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+   padding-top: 40px;
+    
+}
+
+.content-section hr {
+    width: 200px;
+    margin : 30px 0 ;
+}
+.content-section h1 {
+    font-size: 4rem;
+    color : hsl(0, 0%, 98%) 
+}
+
+.content-section p {
+    color : hsl(0, 0%, 98%) ;
+    font-size:  1.2rem;
+    margin: 20px 0px;
+}
+
+.content-section button {
+    background-color: hsl(256, 26%, 20%);
+    border: 1px solid hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 98%);
+    width: 120px;
+    height: 40px;
+}
+
+.img-content-section {
+    
+    max-width: 100%;
+    height: auto; 
+    object-fit: cover;
+    margin-top: 30px;
+    margin-left: 10px;
+
+}
+
+.text-content-section{
+    height: 450px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start ;
+    gap :20px ;
+    padding :15px
+    
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding : 25px ;
+    z-index: 9999;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: end;
+    gap : 20px;
+}
+
+
+.navbar-button {
+    background-color: hsl(0, 0%, 98%);
+    border: 1px solid black;
+    color: black;
+    width: 100px;
+    height: 30px;
+}
+
+.navbar li {
+    color :hsl(273, 4%, 51%) ;
+    display: grid ;
+    place-items: center;
+}
+.how-difference-section {
+    display: flex;
+    flex-direction: column;
+    margin-top : 200px;
+    position: relative;
+    
+}
+
+.hr-how-difference-section {
+    width: 200px;
+    margin-top : 30px  ;
+    color : hsl(0, 0%, 98%)
+}
+.how-difference-section h1 {
+    margin: 40px 0 ;
+    font-size: 4rem;
+}
+
+.how-difference-section h3 {
+    font-size: 2rem;
+    margin :20px 0;
+}
+
+.how-difference-section p {
+    font-size : 1rem;
+    color :hsl(273, 4%, 51%)
+}
+.difference-detail {
+    display: flex ;
+    gap : 20px
+}
+
+.how-we-work {
+
+    min-height: 200px;
+    background-color:hsl(256, 26%, 20%) ;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    justify-content: center;
+    align-items: center;
+    padding :50px;
+    position: relative;
+    margin-top : 100px
+}
+
+.how-we-work h1 {
+    font-size: 3rem ;
+    color : hsl(0, 0%, 98%);
+    z-index: 5;
+}
+
+.how-we-work-button{
+    display: flex;
+    justify-content: end;
+
+    max-width:300px;
+    
+}
+
+.how-we-work-button button {
+        background-color: hsl(256, 26%, 20%);
+        color :hsl(0, 0%, 98%);
+        border: 1px solid hsl(0, 0%, 98%);
+        height: 30px;
+        width: 150px;
+        z-index: 5;
+}
+.footer {
+    margin-top: 140px ;     
+}
+.upper-footer {
+    display : flex ; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.lower-footer {
+    display: flex ;
+    justify-content:start;
+}
+.lower-footer li:first-child{
+    color: hsl(273, 4%, 51%);
+    margin: 15px 0px;
+}
+.lower-footer ul {
+    width: 25%;
+    list-style: none;
+}
+.line-footer {margin-top : 20px;
+    margin-bottom: 40px;
+}
+
+
+.btn-menu-toggle {
+    border: none;
+    display : none ;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.menu-toggle {
+    display: flex !important;
+    flex-direction: column;
+    
+}
+
+.hiding-menu{
+    display: none;
+
+}
+.backgroud-hidding-menu {
+        background-color: hsl(256, 26%, 20%);
+}
+
+.hiding-menu li{
+    list-style: none;
+}
+
+
+.hiding-menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap :10px ;
+    margin-bottom: 20px;
+}
+.hiding-menu-active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-intro-left-desktop{
+    position: absolute;
+    top: 400px;
+}
+
+.img-intro-right-desktop{
+    position: absolute;
+    right: 0;
+
+
+}
+
+.desktop-bg{
+    position:absolute;
+}
+
+.img-how-we-work-desktop{
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+.mobile-bg{
+    display: none;
+    position:absolute;
+}
+
+.img-intro-left-mobile {
+    position: absolute;
+    top : -3px; 
+}
+
+
+.img-intro-right-mobile {
+    position: absolute;
+    right: 0;
+    bottom: -200px;
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .how-difference-section {
+        margin-top: 100px;
+    }
+
+}
+
+
+@media only screen and (max-width: 640px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        gap : 20px;
+    }
+    
+    .navbar {
+        margin-top: 15px;
+        padding : 10px 10px; 
+    }
+
+    .navbar div:first-child{
+        display:    flex;
+        align-items: center;
+    }
+
+    
+    .menu {
+        flex-direction: column;
+        display: none   ;
+    }
+
+    .btn-menu-toggle{
+        display: block;
+    }
+
+    .content-section {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .container {
+        width: 100%;
+        
+    }
+
+    
+
+    .img-content-section {
+    
+        width: 100%;    
+        height: auto; 
+        object-fit: cover;
+        margin-top: 0px;
+        margin-left: 0px;
+    
+    }
+
+    .color-content{
+        height: auto;
+    }
+    .text-content-section{
+        height: auto;
+        margin : 50px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .how-difference-section{
+        margin-top: 0;
+        text-align: center;
+        z-index: 10;
+        background-color: hsl(0, 0%, 98%);
+    }
+
+    .text-content-section h1{
+        font-size: 2rem;
+    }
+    .hr-content-section{
+        display: none;
+    }
+
+    .hr-how-difference-section{
+        display: none;
+    }
+
+    .how-difference-section h1{
+        font-size: 2rem;
+    }
+
+    .how-difference-section h3{
+        font-size: 1.5rem;
+    }
+
+    .difference-detail{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .how-we-work {
+        width: 83%;
+        display: flex;
+        flex-direction: column;
+        gap : 30px;
+        text-align: center;
+        padding-top : 40px 
+    }
+
+    .upper-footer {
+        flex-direction: column;
+        gap :20px   
+    }
+
+    .lower-footer{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lower-footer li:first-child{
+        margin :20px 0 ;
+    }
+
+    .desktop-bg {
+        display: none;
+    }
+
+    .mobile-bg {
+        display: flex;
+    }
+}
